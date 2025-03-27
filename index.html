@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Waste Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nairobi Waste Tracker</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+    
+    <main>
+        <section id="report-section">
+            <h2>Report a Waste Hotspot</h2>
+            <form id="reportForm">
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" required></textarea>
+                
+                <button type="submit">Report</button>
+            </form>
+            <p id="successMessage" class="hidden"></p>
+        </section>
+        
+        <section id="reports-display">
+            <h2>Recent Reports</h2>
+            <div id="reportsContainer"></div>
+        </section>
+        
+        <section id="events-section">
+            <h2>Upcoming Clean-up Events</h2>
+            <ul>
+                <li>March 30, 2025 - Uhuru Park (25 Volunteers)</li>
+                <li>April 5, 2025 - Kibera Community Center (40 Volunteers)</li>
+                <li>April 12, 2025 - Westlands Market (30 Volunteers)</li>
+            </ul>
+        </section>
+        
+        <section id="collection-status">
+            <h2>Garbage Collection Status</h2>
+            <ul>
+                <li>CBD Bin 1: Full</li>
+                <li>Kilimani Bin 2: Empty</li>
+                <li>Westlands Bin 3: Half-full</li>
+            </ul>
+        </section>
+        
+        <section id="leaderboard-section">
+            <h2>Community Leaderboard</h2>
+            <ul id="leaderboard"></ul>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
