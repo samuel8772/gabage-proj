@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Background Video -->
+    <video autoplay loop muted id="bgVideo">
+        <source src="background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <header>
         <h1>Nairobi Waste Tracker</h1>
-        <button id="darkModeToggle">Toggle Dark Mode</button>
+        <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
     </header>
     
     <main>
         <section id="report-section">
-            <h2>Report a Waste Hotspot</h2>
+            <h2>📍 Report a Waste Hotspot</h2>
             <form id="reportForm">
                 <label for="location">Location:</label>
                 <input type="text" id="location" required>
@@ -22,18 +28,18 @@
                 <label for="description">Description:</label>
                 <textarea id="description" required></textarea>
                 
-                <button type="submit">Report</button>
+                <button type="submit">🚀 Report</button>
             </form>
             <p id="successMessage" class="hidden"></p>
         </section>
         
         <section id="reports-display">
-            <h2>Recent Reports</h2>
+            <h2>🗑️ Recent Reports</h2>
             <div id="reportsContainer"></div>
         </section>
         
         <section id="events-section">
-            <h2>Upcoming Clean-up Events</h2>
+            <h2>📅 Upcoming Clean-up Events</h2>
             <ul>
                 <li>March 30, 2025 - Uhuru Park (25 Volunteers)</li>
                 <li>April 5, 2025 - Kibera Community Center (40 Volunteers)</li>
@@ -42,7 +48,7 @@
         </section>
         
         <section id="collection-status">
-            <h2>Garbage Collection Status</h2>
+            <h2>🚛 Garbage Collection Status</h2>
             <ul>
                 <li>CBD Bin 1: Full</li>
                 <li>Kilimani Bin 2: Empty</li>
@@ -51,11 +57,11 @@
         </section>
         
         <section id="leaderboard-section">
-            <h2>Community Leaderboard</h2>
+            <h2>🏆 Community Leaderboard</h2>
             <ul id="leaderboard"></ul>
         </section>
     </main>
-    
+
     <script src="script.js"></script>
 </body>
 </html>

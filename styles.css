@@ -1,94 +1,69 @@
-/* Apply smooth transition for effects */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: background 0.4s ease, color 0.4s ease;
     font-family: 'Arial', sans-serif;
-    background-image: url(/pics/imgres.html);
+    transition: all 0.3s ease-in-out;
 }
 
-/* Background with grey overlay effect */
-body {
-    background: url('your-gif-url.gif') no-repeat center center fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    position: relative;
-    background-image: url(./pics/imgres.html); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-/* Grey overlay effect */
-body::before {
-    content: "";
-    position: absolute;
+/* Background Video */
+#bgVideo {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(128, 128, 128, 0.5); /* Semi-transparent grey overlay */
+    object-fit: cover;
     z-index: -1;
 }
 
-/* Main container */
-.container {
-    width: 90%;
-    max-width: 800px;
-    background: rgba(255, 255, 255, 0.9);
+/* Body Styling */
+body {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Sections */
+section {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Headings */
-h1, h2 {
-    color: #2c3e50;
-    margin-bottom: 15px;
-}
-
-/* Form Styling */
-form {
-    margin-top: 20px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Buttons */
 button {
     background: #007bff;
     color: white;
-    border: none;
     padding: 10px 15px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
     background: #0056b3;
-    transform: scale(1.05);
 }
 
-/* Success Message */
-.success-message {
-    display: none;
-    padding: 10px;
-    background: #28a745;
-    color: white;
-    border-radius: 5px;
-    margin-top: 10px;
-    opacity: 0;
-    transition: opacity
+/* Dark Mode */
+.dark-mode {
+    background: #111;
+    color: #fff;
+}
+
+.dark-mode section {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
 }
