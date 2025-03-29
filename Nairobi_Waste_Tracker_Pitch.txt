@@ -1,0 +1,65 @@
+**🌍 Project Pitch: Nairobi Waste Tracker 🚮**
+
+---
+
+## **Slide 1: 🌟 Why Nairobi Needs This**
+🚮 Ever wondered why Nairobi’s garbage problem persists? Our city faces waste management issues daily. 
+✅ **Introducing Nairobi Waste Tracker** – A smart, real-time solution to track and improve garbage collection across the city.
+
+---
+
+## **Slide 2: 🚧 The Challenge We Face**
+- ❌ **Unreliable Garbage Collection** – Residents lack timely updates on pickups.
+- 🗑️ **Overflowing Bins & Litter** – Poor waste management harms public health.
+- 🏙️ **Limited Community Engagement** – Residents lack an easy way to report waste issues.
+
+---
+
+## **Slide 3: 🎯 Who Benefits?**
+- 👨‍👩‍👧‍👦 **Nairobi Residents** – Get live updates on garbage collection.
+- 🏛️ **Local Authorities** – Improve efficiency and service delivery.
+- 🌱 **Environmental Activists** – Support sustainable urban cleanup efforts.
+
+---
+
+## **Slide 4: 🔑 What Makes This Unique?**
+✔️ **Live Collection Schedules** – Know when trash will be picked up.
+✔️ **Bin Status Updates** – See which bins are full or empty.
+✔️ **Easy Waste Reporting** – Instantly notify authorities of missed collections.
+✔️ **Community Leaderboard** – Recognizes top contributors to cleaner streets.
+✔️ **Dark Mode Toggle** – Enhances user experience with an eye-friendly interface.
+
+---
+
+## **Slide 5: 💡 How It Works**
+🛠️ **Built With:** HTML, CSS, JavaScript
+📂 **Data Storage:** Local Storage for reports & leaderboard tracking
+🚀 **Key Functionalities:**
+  - 📝 **Submit Reports** – Report waste hotspots in seconds.
+  - 🏆 **Track Community Efforts** – See who’s leading in clean-up reports.
+  - 🌙 **Dark Mode** – Save your preferred viewing experience.
+  - 🗑️ **Manage Reports** – Users can edit and delete reports dynamically.
+
+---
+
+## **Slide 6: 📢 Spreading the Word**
+📱 **Social Media Campaigns** – Leverage Twitter, Facebook & WhatsApp to reach residents.
+🏘️ **Community Workshops** – Educate people on proper waste management and how to use the platform.
+🏅 **Partnerships with Local Authorities** – Collaborate to improve city-wide cleanup efforts.
+
+---
+
+## **Slide 7: 🚀 The Future of Nairobi Waste Management**
+Nairobi Waste Tracker **empowers communities** with real-time waste management solutions, making Nairobi **cleaner, healthier, and more sustainable** for everyone! 🌱♻️
+
+✅ **Join us in making Nairobi waste-free!**
+
+---
+
+## **Slide 8: 📩 Let's Connect!**
+📛 **Samuel Karobia**  
+📧 **kamauskk005@gmail.com**
+
+📢 **Be part of the change – Report, Track, and Transform!**
+
+♻️ **Together, we can make Nairobi shine!** 🌟
