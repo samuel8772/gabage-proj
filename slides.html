@@ -3,168 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nairobi Waste Tracker Slides</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Nairobi Waste Tracker - Presentation</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            align-items: center;
             justify-content: center;
-            height: 100vh;
-            background: black;
-            overflow: hidden;
-        }
-        .background-video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
-        .slide-container {
-            width: 100%;
-            height: 100vh;
-            display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.6);
+            height: 100vh;
+            background: linear-gradient(45deg, #007bff, #00c853);
             color: white;
-            padding: 20px;
-            transition: transform 0.5s ease-in-out;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         .slide {
             display: none;
-            max-width: 900px;
+            padding: 100px 0;
         }
-        .slide.active {
+        .active {
             display: block;
+            animation: fadeIn 1s ease-in-out;
         }
-        h1, h2, p, ul {
-            font-size: 2rem;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-        .navigation {
+        .buttons {
             position: absolute;
             bottom: 20px;
-            width: 100%;
-            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
         }
-        .nav-btn {
-            background: #007bff;
+        button {
+            background: #00c853;
             color: white;
             border: none;
-            padding: 15px 20px;
-            font-size: 1.5rem;
-            border-radius: 5px;
+            padding: 20px 30px;
+            font-size: 24px;
             cursor: pointer;
-            transition: background 0.3s ease, transform 0.2s ease;
-            margin: 10px;
+            margin: 20px;
+            border-radius: 8px;
         }
-        .nav-btn:hover {
-            background: #0056b3;
-            transform: scale(1.05);
+        button:hover {
+            background: #007bff;
+        }
+        h1 {
+            font-size: 48px;
+        }
+        p, li {
+            font-size: 32px;
+            line-height: 1.8;
+        }
+        ul {
+            padding-left: 50px;
+            text-align: left;
         }
     </style>
 </head>
 <body>
-    <video class="background-video" autoplay loop muted>
-        <source src="background.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    
-    <div class="slide-container">
+    <div class="container">
         <div class="slide active">
-            <h1>🌍 Project Pitch: Nairobi Waste Tracker 💡</h1>
-        </div>
-        <div class="slide">
-            <h2>🌟 Introduction</h2>
-            <p>Nairobi Waste Tracker is a smart solution designed to improve waste management in Nairobi by providing real-time tracking, reporting, and community involvement.</p>
-        </div>
-        <div class="slide">
-            <h2>🌟 Why Nairobi Needs This</h2>
-            <p>📌 <strong>The Problem:</strong> Nairobi struggles with inefficient waste management, leading to overflowing bins and littered streets.</p>
-            <p>✅ <strong>Introducing Nairobi Waste Tracker</strong> – A smart, real-time solution to track and improve garbage collection across the city.</p>
-        </div>
-        <div class="slide">
-            <h2>🚛 The Problem We Face</h2>
-            <ul>
-                <li>❌ <strong>Unreliable Garbage Collection</strong> – No timely updates on pickups.</li>
-                <li>🗑️ <strong>Overflowing Bins & Litter</strong> – Poor management affects public health.</li>
-                <li>🏡 <strong>Limited Community Involvement</strong> – No easy way to report waste issues.</li>
-            </ul>
-        </div>
-        <div class="slide">
-            <h2>💡 Solution</h2>
-            <p>Nairobi Waste Tracker provides an interactive platform where residents can report waste hotspots, track bin status, and receive real-time updates on garbage collection schedules.</p>
-        </div>
-        <div class="slide">
-            <h2>🔑 Key Features</h2>
-            <ul>
-                <li>✅ Live Garbage Collection Schedules</li>
-                <li>✅ Bin Status Updates</li>
-                <li>✅ Report Waste Hotspots</li>
-                <li>✅ Community Leaderboard</li>
-                <li>✅ Dark Mode for User Experience</li>
-            </ul>
-        </div>
-        <div class="slide">
-            <h2>🛠 Technologies Used</h2>
-            <ul>
-                <li>📂 <strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-                <li>📂 <strong>Data Storage:</strong> Local Storage for reports & leaderboard tracking</li>
-            </ul>
-        </div>
-        <div class="slide">
-            <h2>🚧 Challenges Faced</h2>
-            <ul>
-                <li>❌ Dark Mode Toggle Issue – Initially, it didn’t apply styles properly.</li>
-                <li>✅ Solution: Fixed JavaScript and CSS to ensure smooth transitions.</li>
-                <li>❌ Live Wallpaper Crashes – Adding a video background caused performance issues.</li>
-                <li>✅ Solution: Switched to optimized GIFs for better compatibility.</li>
-                <li>❌ Spacing & Layout Issues – Elements were not well-aligned.</li>
-                <li>✅ Solution: Improved CSS for better structure and responsiveness.</li>
-            </ul>
-        </div>
-        <div class="slide">
-            <h2>📢 Let's Connect!</h2>
-            <p>📖 <strong>Samuel Karobia</strong></p>
-            <p>📩 <strong>kamauskk005@gmail.com</strong></p>
-            <p>📢 Join us in making Nairobi waste-free!</p>
+            <h1>🌍 Nairobi Waste Tracker</h1>
+            <p>A smart, real-time solution for Nairobi’s waste management challenges.</p>
         </div>
         
-        <div class="navigation">
-            <button class="nav-btn" onclick="prevSlide()">⬅ Previous</button>
-            <button class="nav-btn" onclick="nextSlide()">Next ➡</button>
+        <div class="slide">
+            <h1>📌 The Problem</h1>
+            <ul>
+                <li>Unreliable garbage collection – No timely updates on pickups.</li>
+                <li>Overflowing bins & litter – Poor management affects public health.</li>
+                <li>Limited community involvement – No easy way to report waste issues.</li>
+                <li>Lack of waste segregation – Many recyclables end up in landfills.</li>
+                <li>Illegal dumping – Unauthorized sites contribute to environmental hazards.</li>
+            </ul>
+        </div>
+        
+        <div class="slide">
+            <h1>✅ The Solution</h1>
+            <ul>
+                <li>Live garbage collection schedules to keep residents informed.</li>
+                <li>Bin status updates to prevent overflow and improve management.</li>
+                <li>Community reporting tools to engage citizens in waste management.</li>
+                <li>Leaderboard tracking to encourage responsible waste disposal.</li>
+            </ul>
+        </div>
+        
+        <div class="slide">
+            <h1>🎯 Target Audience</h1>
+            <p>Nairobi Residents – Individuals who want a cleaner and more sustainable city.</p>
+        </div>
+        
+        <div class="slide">
+            <h1>🛠️ Technologies Used</h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Render for deployment</li>
+            </ul>
+        </div>
+        
+        <div class="slide">
+            <h1>🚧 Challenges Faced</h1>
+            <ul>
+                <li>Dark mode toggle issues – Fixed JavaScript and CSS.</li>
+                <li>Live wallpaper crashes – Optimized performance.</li>
+                <li>Spacing and layout inconsistencies – Improved CSS styling.</li>
+                <li>Lack of community awareness – Focused on engagement strategies.</li>
+                <li>Waste segregation challenges – Need for better education.</li>
+            </ul>
+        </div>
+        
+        <div class="slide">
+            <h1>📧 Contact</h1>
+            <p>Samuel Karobia</p>
+            <p>Email: kamauskk005@gmail.com</p>
+        </div>
+        
+        <div class="slide">
+            <h1>🙏 Thank You! 🎉</h1>
+            <p>Together, we can make Nairobi cleaner and greener! 🌍♻️</p>
         </div>
     </div>
 
+    <div class="buttons">
+        <button onclick="prevSlide()">⬅️ Previous</button>
+        <button onclick="nextSlide()">Next ➡️</button>
+    </div>
+
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let currentSlide = 0;
-            const slides = document.querySelectorAll(".slide");
-            
-            function showSlide(index) {
-                slides.forEach((slide, i) => {
-                    slide.classList.remove("active");
-                    if (i === index) slide.classList.add("active");
-                });
-            }
-            
-            window.nextSlide = function() {
-                currentSlide = (currentSlide + 1) % slides.length;
-                showSlide(currentSlide);
-            }
-            
-            window.prevSlide = function() {
-                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-                showSlide(currentSlide);
-            }
-        });
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
     </script>
 </body>
 </html>
-
