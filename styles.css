@@ -9,20 +9,10 @@
 
 /* Background Image */
 body {
-    background: url('https://opb-opb-prod.cdn.arcpublishing.com/resizer/v2/ZJM7NGQIDZA7NOFO5XIOIIYYTA.jpg?auth=afb2279cb20f0d944e2fc5190c716f37b920056dc731155d27075ed1e7111b7c&width=1440') 
-        no-repeat center center fixed;
-    background-size: cover;
-    background-attachment: fixed;
+    background: url('https://opb-opb-prod.cdn.arcpublishing.com/resizer/v2/ZJM7NGQIDZA7NOFO5XIOIIYYTA.jpg?auth=afb2279cb20f0d944e2fc5190c716f37b920056dc731155d27075ed1e7111b7c&width=1440') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 20px;
-}
-
-/* Ensure responsiveness for smaller screens */
-@media (max-width: 768px) {
-    body {
-        background-size: contain; /* Adjusts image scaling on small screens */
-    }
 }
 
 /* Header */
@@ -68,3 +58,11 @@ button:hover {
     color: #fff;
 }
 
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+}
